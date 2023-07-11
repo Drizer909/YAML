@@ -1,5 +1,12 @@
 
 ## YAML (YAML Ain't Markup Language) prev - yet another markup language
+![pro](https://github.com/Drizer909/YAML/assets/100469278/59692c6f-9fe9-4314-91e1-7eab42f5d6c8)
+<br>
+
+Devops| [`link`](https://drizershivam.hashnode.dev/yaml-yet-aint-markup-language) | Shivam Sharma |
+
+<br>
+<br>
 
 YAML files are like spreadsheets, but for computers.
 Just like a spreadsheet, a YAML file can store data in a table-like format. But unlike a spreadsheet, a YAML file is written in a human-readable format that is easy for computers to understand. This makes YAML files ideal for storing configuration data, such as the settings for a software application.
