@@ -1,0 +1,40 @@
+myself: shivam
+fruit: "apple"
+job: 'cs'
+---
+bio: |
+my name is shivma sharma.
+i am a boy.
+---
+#write single line in multiple lines
+message: >
+this will
+look like 
+all in single lines #this message variable is same as single line which is "this will look like all in single line"
+---
+number: 123
+float: 56.34
+boolean: yes #True true t T y Y 
+
+#specific type by inforce it 
+zero: !! 0
+positive-number: !!int 45
+negative-number: !!int -4.5
+binarynumber: !!int 0b1101
+octalnumber: !!int 0654
+hexadec: !!int 0x45 
+commavalue: !!int +540_000 #540,00 if we want to store like this
+floatingpointsnumber: !!float 58.3
+infinity: !!float .inf
+not-a-number: .nan
+boolean: !!bool yes
+string: !!str shivam
+
+surname: !!null  Null #this is null value or for null keys 
+~: this is a null key 
+
+
+#dates and time 
+
+
+ 
