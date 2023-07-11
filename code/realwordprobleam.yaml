@@ -1,0 +1,8 @@
+school:
+  - name 
+  - Principal 
+  - students: !!omap
+   - students: 
+      - roll_no
+      - name 
+      - marks 

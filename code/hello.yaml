@@ -1,0 +1,23 @@
+#yaml is collection of documents from 0 to infinite
+"apple":"I am a red"
+1:"This is shivam roll_no"
+---
+#lists
+- apple
+- mango 
+- banana
+---
+#yaml is case-sensitive language 
+- Apple 
+- apple #there both are different 
+---
+#block-style 
+cities :
+ - new delhi
+ - mumbai 
+ - jaipur 
+# another way to writing a block-style 
+shivam : [justin, selena, jimin]
+---
+{"mango":"this is fruit" , age:34}
+... # for ending documnets

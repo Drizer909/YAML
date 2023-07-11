@@ -1,0 +1,83 @@
+student: !!seq
+ - marks
+ - name 
+ - roll_no 
+# like this also 
+student: [marks,name ,roll_no]
+#sparse seq - some keys are empty
+sparse seq: !!seq
+ - hi 
+ - hello
+ - 
+ - shivam
+
+#nested-sequence
+- 
+ - marks
+ - roll_no
+- 
+ - file
+ - zero
+
+#maps key valuse pairs
+!!map
+
+#nested maps {maps within a maps}
+name: shivam sharma 
+marks:
+ "sciencee": !!int 45
+ "maths": !!int 66
+
+
+#pairs dataype
+#keys may have duplicated value 
+pair example: !!pairs
+ - job: student
+ - job: student
+#this will convert into array of hasttables
+#same as 
+pair example: !!pairs [job: student, job: teacher]
+
+#set dataypes 
+#!!set they allow you to have unique value
+names: !!set
+ ? shivam 
+ ? hardik
+ ? rahul
+ 
+
+#if u want to set whole list as a value you can set as a dectionary  !!omap
+People: !!omap
+ - shivam: 
+    booling: match
+    gaming: match 
+ - hardik:
+   ok: aihfj
+
+#reusing some properties 
+likefav: 
+  - fav fruit: mango
+  - dislikes: grapes
+
+person1:
+  name: shivam sharma 
+  fav fruit: mango
+  dislikes: grapes
+
+person2:
+  name: rahul 
+  fav fruit: mango
+  dislikes: grapes
+#so for not repeating the properties every time we use anchors ( &base )
+likefav: &base
+  - fav fruit: mango
+  - dislikes: grapes
+
+person1:
+  name: shivam sharma 
+  <<: *base #for adding properties 
+person2:
+  name: rahul 
+  <<: *base
+  dislikes: mango
+
